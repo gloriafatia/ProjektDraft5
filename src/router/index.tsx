@@ -38,11 +38,11 @@ const Router = () =>
     {
       path: "Transactions",
       element: (
-        <PrivateLayout>
+        <PrivateGuard>
           <PrivateLayout>
             <Transactions />
           </PrivateLayout>
-        </PrivateLayout>
+        </PrivateGuard>
       ),
     },
     {

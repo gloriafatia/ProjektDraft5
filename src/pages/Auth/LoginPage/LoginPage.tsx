@@ -52,16 +52,10 @@ const LoginForm = () => {
       const roles = response?.data?.roles;
       setAuth({ user, pwd, roles, accessToken });
 
-      
-
-
       setUser("");
       setPwd("");
-      
-      
-      navigate(from, { replace: true });
 
-      
+      navigate(from, { replace: true });
     } catch (err: any) {
       if (!err?.response) {
         setErrMsg("No server Response");
