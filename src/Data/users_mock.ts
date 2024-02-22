@@ -1,6 +1,6 @@
 interface User {
   key: React.Key;
-  user_id: string;
+  user_id: string | any;
   first_name: string;
   last_name: string;
   phone_nr: string;

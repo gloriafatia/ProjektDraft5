@@ -1,4 +1,4 @@
-interface transactions {
+interface Transaction {
   key: React.Key;
   trx_id: number;
   username: string;
@@ -10,13 +10,13 @@ interface transactions {
   account_holder: string;
   country: string;
   status: string;
-  trx_init_time: string;
-  trx_complete_time: string | null;
+  trx_init_time: string | any;
+  trx_complete_time: string | null | any;
   operator: string;
   part: string;
 
 }
-const data: transactions[] = [  
+const initialData: Transaction[] = [  
     {
       key: 1,
       "trx_id": 1,
@@ -529,5 +529,5 @@ const data: transactions[] = [
     }
   ] 
 
-  export default data;
+  export default initialData;
   

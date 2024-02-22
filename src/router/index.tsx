@@ -17,52 +17,52 @@ const Router = () =>
     {
       path: "/",
       element: (
-        <PrivateGuard>
+        
           <PrivateLayout>
             <DashboardPage />
           </PrivateLayout>
-        </PrivateGuard>
+       
       ),
       index: true,
     },
     {
       path: "UserManagement",
       element: (
-        <PrivateGuard>
+        
           <PrivateLayout>
             <UserManagement />
           </PrivateLayout>
-        </PrivateGuard>
+       
       ),
     },
     {
       path: "Transactions",
       element: (
-        <PrivateGuard>
+       
           <PrivateLayout>
             <Transactions />
           </PrivateLayout>
-        </PrivateGuard>
+       
       ),
     },
     {
       path: "LoginPage",
       element: (
-        <PublicGuard>
+        
           <PublicLayout>
             <LoginPage />
           </PublicLayout>
-        </PublicGuard>
+        
       ),
     },
     {
       path: "RegisterPage",
       element: (
-        <PublicGuard>
+        
           <PublicLayout>
             <RegisterPage />
           </PublicLayout>
-        </PublicGuard>
+        
       ),
     },
     {
